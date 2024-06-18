@@ -5,7 +5,7 @@
 <title>Formulario de registro</title>
 <link href="estilos.css" rel="stylesheet">
 </head>
-<body>
+<body id="cuerpo">
 	
 	<header>
 		<h1>Formulario de registro</h1><br>
@@ -14,28 +14,22 @@
 	
 	<main>
 		<form>
-			<fieldset>
+			<fieldset id="personal">
 				<legend>¿Quién eres?</legend>
 				
-				<label>
-					Nombre<br>
-					<input type="text">
-				</label>
-				<label><br>
-					Apellidos:<br>
-					<input type="text">
-				</label>
-				<label><br>
-					Correo electronico:<br>
-					<input type="text">
-				</label>
+				<label for="Nombre">Nombre<br></label>
+				<input type="text id="Nombre" name="Nombre" required"/>
+				<label for="Apellidos"><br>Apellidos:<br></label>
+				<input type="text id="Apellidos" name="Apellidos" required">
+				<label for="Correo"><br>Correo electronico:<br></label>
+				<input type="text id="Correo" name="Correo" required">
 				<label><br>
 					Fecha de nacimiento:<br>
 					<input type="date">
 				</label>
 			</fieldset>
 			
-			<fieldset>
+			<fieldset class="lugarYSesion">
 				<legend>¿De donde eres?</legend>
 				<label>
 					Ciudad
@@ -43,7 +37,7 @@
 				</label>
 				<label>
 					Codigo postal
-					<input type="number">
+					<input type="text">
 				</label>
 				<label>
 					Pais
@@ -246,24 +240,24 @@
 				</label>
 			</fieldset>
 			
-			<fieldset>
+			<fieldset class="lugarYSesion">
 				<legend>¿Como quieres iniciar sesion?</legend>
 				<label>
 					Nombre de usuario &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-					<input type="text" id="nomUsu">
+					<input type="text" id="nomUsu" required>
 				</label><br>
 				<label>
 					Contraseña &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-					<input type="password" id="nomUsu">
+					<input type="password" id="nomUsu" minlength="8" maxlength="8" required>
 				</label>
 				<label><br>
 					Repita contraseña &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-					<input type="password" id="nomUsu">
+					<input type="password" id="nomUsu" minlength="8" maxlength="8" required>
 				</label>
 			</fieldset>
 			
-			<fieldset>
-				<legend>Condiciones de registro</legend>
+			<fieldset id="condiciones">
+				<legend >Condiciones de registro</legend>
 				
 				<p>Deseo recibir ofertas</p>
 				<label>

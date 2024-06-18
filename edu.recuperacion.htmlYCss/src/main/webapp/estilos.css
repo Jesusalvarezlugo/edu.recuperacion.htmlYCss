@@ -1,0 +1,25 @@
+#cuerpo{
+	margin-:auto;
+	height: 800px;
+}
+
+#personal{
+	background-color: skyblue;
+}
+.lugarYSesion{
+	background-color:darkorange;
+}
+#condiciones{
+	background-color: lawngreen;
+	border-color:red;
+	border-width: 1px;
+}
+
+.form-input:focus {
+background-color: yellow;
+outline: none;
+}
+
+form{
+	background-image: url(cielo.jpeg);
+}
